@@ -4,7 +4,6 @@ import * as http from "http"
 function startServer(){
     const server = http.createServer(async(req,res)=>{
         if(req.url === '/wild') {
-        /* res.end(JSON.stringify("200 succès") + "\n");*/
          res.end(JSON.stringify(await getPokemonById(4))+ "\n" );
         }
         else if (req.url !== '/wild') {
