@@ -1,0 +1,30 @@
+{
+  "name": "pokemon",
+  "version": "1.0.0",
+  "description": "API REST en Node.js pur (module `http`) + TypeScript, adossée à PokéAPI. L'état du jeu est gardé en mémoire.",
+  "keywords": [],
+  "homepage": "https://github.com/Tommy-JOUHANS/pokemon#readme",
+  "bugs": {
+    "url": "https://github.com/Tommy-JOUHANS/pokemon/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Tommy-JOUHANS/pokemon.git"
+  },
+  "license": "ISC",
+  "author": "Tommy JOUHANS",
+  "type": "commonjs",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "npx tsx index.ts",
+    "typecheck": "tsc --noEmit",
+    "clean": "rm -rf dist"
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.5",
+    "tsx": "^4.23.15",
+    "typescript": "^7.0.2"
+  }
+}
